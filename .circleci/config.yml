@@ -126,18 +126,18 @@ workflows:
         context:
           - doFlo Admin
 
-    - test:
-        requires:
-          - setup
-        filters:
-          tags:
-            only: /^v.*/
-        context:
-          - doFlo Admin
+    # - test:
+    #     requires:
+    #       - setup
+    #     filters:
+    #       tags:
+    #         only: /^v.*/
+    #     context:
+    #       - doFlo Admin
 
     - deploy:
         requires:
-          - test
+          - setup
         filters:
           tags:
             only: /^v.*/
