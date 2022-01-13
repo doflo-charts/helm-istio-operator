@@ -52,6 +52,7 @@ jobs:
       # execute automatically every time before you commit, ensuring the build never fails at this step!
       - run:
          command: |
+           pip install --upgrade pip
            pip install pre-commit cfgv
            pre-commit install
            pre-commit run --all-files
