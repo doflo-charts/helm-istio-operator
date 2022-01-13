@@ -14,6 +14,6 @@ icon: https://istio.io/latest/favicons/android-192x192.png
 sources:
   - https://github.com/doflo-charts/helm-istio-operator
 maintainers:
-  - name: doFLo Infrastructure Team
+  - name: doFlo Infrastructure Team
     email: infra@doflo.com
     url: https://infra.doflo.com
