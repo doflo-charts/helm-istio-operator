@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 
 image:
-  repository: docker.io/istio/operator
+  repository: 542393931612.dkr.ecr.us-west-2.amazonaws.com/istio-operator
   # Overrides the image tag whose default is {{ .Chart.AppVersion }}
   tag: ""
   pullPolicy: IfNotPresent
@@ -36,9 +36,9 @@ securityContext:
       - ALL
   privileged: false
   readOnlyRootFilesystem: true
-  runAsGroup: 1337
-  runAsUser: 1337
-  runAsNonRoot: true
+  runAsGroup: 0
+  runAsUser: 0
+  runAsNonRoot: false
 
 serviceMonitor:
   enabled: false
