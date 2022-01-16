@@ -3,7 +3,7 @@ name: istio-operator
 version: 0.0.1-replace
 appVersion: v0.0.1
 description: Helm chart for the Istio Operator.
-keywords:
+keywords: 
   - kubernetes
   - istio
   - operator

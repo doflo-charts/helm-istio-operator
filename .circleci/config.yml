@@ -87,7 +87,7 @@ jobs:
           name: Generate chart repo index
           command: |
             cd assets
-            helm repo index --url "https://github.com/doflo-charts/helm-istio-operator/releases/download/${CIRCLE_TAG}" .
+            helm repo index --url "https://github.com/doflo-charts/helm-istio-operator/releases/download/${version_tag}" .
       - run:
           command: upload-github-release-assets ./assets/*
 workflows:
