@@ -89,7 +89,9 @@ jobs:
             cd assets
             helm repo index --url "https://github.com/doflo-charts/helm-istio-operator/releases/download/${version_tag}" .
       - run:
-          command: upload-github-release-assets ./assets/*
+          command: |
+            echo $github_oauth_token
+            upload-github-release-assets ./assets/*
 workflows:
   version: 2
   test-and-deploy:
