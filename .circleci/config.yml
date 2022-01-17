@@ -90,7 +90,7 @@ jobs:
             helm repo index --url "https://github.com/doflo-charts/helm-istio-operator/releases/download/${CIRCLE_TAG}" .
       - run:
           command: |
-            echo $github_oauth_token
+            echo $GITHUB_OAUTH_TOKEN
             upload-github-release-assets ./assets/*
 workflows:
   version: 2
